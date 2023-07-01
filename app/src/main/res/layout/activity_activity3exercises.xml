@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_3"
+    tools:context="com.example.semestralna_praca.Activity3exercises">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your favorite exercises"
+            android:textColor="@color/blue_2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:backgroundTint="@color/teal_200"
+            android:foregroundTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.076" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/scrollLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/biceps_curls"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/biceps_curls"
+                android:contentDescription="biceps curls"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/biceps_curls2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/biceps_curls"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/cable_curls"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/cable_curls"
+                android:contentDescription="cable curls" />
+
+            <ImageButton
+                android:id="@+id/cable_curls2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/cable_curls"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/chin_ups"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/chin_ups"
+                android:contentDescription="chin ups" />
+
+            <ImageButton
+                android:id="@+id/chin_ups2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/chin_ups"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/preacher_curls"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/preacher_curls"
+                android:contentDescription="preacher curls" />
+
+            <ImageButton
+                android:id="@+id/preacher_curls2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/preacher_curls"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/concentration_curls"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/concentration_curls"
+                android:contentDescription="concentration curls" />
+
+            <ImageButton
+                android:id="@+id/concentration_curls2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/concentration_curls"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_curls"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_curls"
+                android:contentDescription="dumbell curls" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_curls2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_curls"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/chest_dips"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/chest_dips"
+                android:contentDescription="chest dips" />
+
+            <ImageButton
+                android:id="@+id/chest_dips2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/chest_dips"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/flat_bench_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/flat_bench_press"
+                android:contentDescription="flat bench press" />
+
+            <ImageButton
+                android:id="@+id/flat_bench_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/flat_bench_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/incline_bench_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/incline_bench_press"
+                android:contentDescription="incline bench press" />
+
+            <ImageButton
+                android:id="@+id/incline_bench_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/incline_bench_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/decline_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/decline_press"
+                android:contentDescription="decline press" />
+
+            <ImageButton
+                android:id="@+id/decline_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/decline_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_press"
+                android:contentDescription="dumbbell press" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/incline_dumbbell_presss"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/incline_dumbbell_press"
+                android:contentDescription="incline dumbbell press" />
+
+            <ImageButton
+                android:id="@+id/incline_dumbbell_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/incline_dumbbell_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/push_ups"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/push_ups"
+                android:contentDescription="push ups" />
+
+            <ImageButton
+                android:id="@+id/push_ups2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/push_ups"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/machine_shoulder_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/machine_shoulder_press"
+                android:contentDescription="machine shoulder press" />
+
+            <ImageButton
+                android:id="@+id/machine_shoulder_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/machine_shoulder_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/cable_front_raise"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/cable_front_raise"
+                android:contentDescription="cable front raise" />
+
+            <ImageButton
+                android:id="@+id/cable_front_raise2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/cable_front_raise"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_shoulder_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_shoulder_press"
+                android:contentDescription="dumbbell shoulder press" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_shoulder_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_shoulder_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/upright_rows"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/upright_rows"
+                android:contentDescription="upright rows" />
+
+            <ImageButton
+                android:id="@+id/upright_rows2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/upright_rows"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_lateral_raise"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_lateral_raise"
+                android:contentDescription="dumbbell lateral raise" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_lateral_raise2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_lateral_raise"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/military_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/military_press"
+                android:contentDescription="military press" />
+
+            <ImageButton
+                android:id="@+id/military_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/military_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_extension"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_extension"
+                android:contentDescription="dumbbell extension" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_extension2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_extension"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/barbell_extension"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_extension"
+                android:contentDescription="barbell extension" />
+
+            <ImageButton
+                android:id="@+id/barbell_extension2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_extension"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/close_grip_bench_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/close_grip_bench_press"
+                android:contentDescription="close grip bench press" />
+
+            <ImageButton
+                android:id="@+id/close_grip_bench_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/close_grip_bench_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/tricep_extension"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/tricep_extension"
+                android:contentDescription="tricep extension" />
+
+            <ImageButton
+                android:id="@+id/tricep_extension2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/close_grip_bench_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/sit_ups"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/sit_ups"
+                android:contentDescription="sit ups" />
+
+            <ImageButton
+                android:id="@+id/sit_ups2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/sit_ups"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/leg_raises"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/leg_raises"
+                android:contentDescription="leg raises" />
+
+            <ImageButton
+                android:id="@+id/leg_raises2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/leg_raises"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/elbow_plank"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/elbow_plank"
+                android:contentDescription="elbow plank" />
+
+            <ImageButton
+                android:id="@+id/elbow_plank2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/elbow_plank"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/wide_grip_lat_pulldown"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/wide_grip_lat_pulldown"
+                android:contentDescription="wide grip lat pulldown" />
+
+            <ImageButton
+                android:id="@+id/wide_grip_lat_pulldown2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/wide_grip_lat_pulldown"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/seated_back_rows"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/seated_back_rows"
+                android:contentDescription="seated back rows" />
+
+            <ImageButton
+                android:id="@+id/seated_back_rows2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/seated_back_rows"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/body_back_extension"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/body_back_extension"
+                android:contentDescription="body back extension" />
+
+            <ImageButton
+                android:id="@+id/body_back_extension2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/body_back_extension"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/barbell_bent_over_row"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_bent_over_row"
+                android:contentDescription="barbell bent over row" />
+
+            <ImageButton
+                android:id="@+id/barbell_bent_over_row2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_bent_over_row"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/kettlebell_swings"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/kettlebell_swings"
+                android:contentDescription="kettlebell swings" />
+
+            <ImageButton
+                android:id="@+id/kettlebell_swings2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/kettlebell_swings"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/hip_thrust"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/hip_thrust"
+                android:contentDescription="hip thrust" />
+
+            <ImageButton
+                android:id="@+id/hip_thrust2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/hip_thrust"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_deadlift"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_deadlift"
+                android:contentDescription="dumbbell deadlift" />
+
+            <ImageButton
+                android:id="@+id/dumbbell_deadlift2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/dumbbell_deadlift"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/adductor_machine"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/adductor_machine"
+                android:contentDescription="adductor machine" />
+
+            <ImageButton
+                android:id="@+id/adductor_machine2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/adductor_machine"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/leg_press"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/leg_press"
+                android:contentDescription="leg press" />
+
+            <ImageButton
+                android:id="@+id/leg_press2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/leg_press"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/seated_machine_leg_extension"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/seated_machine_leg_extension"
+                android:contentDescription="seated machine leg extension" />
+
+            <ImageButton
+                android:id="@+id/seated_machine_leg_extension2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/seated_machine_leg_extension"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/bulgarian_split_squat"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/bulgarian_split_squat"
+                android:contentDescription="bulgarian split squat" />
+
+            <ImageButton
+                android:id="@+id/bulgarian_split_squat2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/bulgarian_split_squat"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/barbell_back_squat"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_back_squat"
+                android:contentDescription="barbell back squat" />
+
+            <ImageButton
+                android:id="@+id/barbell_back_squat2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_back_squat"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/standing_calf_raise"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/standing_calf_raise"
+                android:contentDescription="standing calf raise" />
+
+            <ImageButton
+                android:id="@+id/standing_calf_raise2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/standing_calf_raise"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/seated_calf_raise"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/seated_calf_raise"
+                android:contentDescription="seated calf raise" />
+
+            <ImageButton
+                android:id="@+id/seated_calf_raise2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/seated_calf_raise"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/barbell_romanian_deadlift"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_romanian_deadlift"
+                android:contentDescription="barbell_romanian_deadlift" />
+
+            <ImageButton
+                android:id="@+id/barbell_romanian_deadlift2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_romanian_deadlift"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/lying_leg_curls"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/lying_leg_curls"
+                android:contentDescription="lying leg curls" />
+
+            <ImageButton
+                android:id="@+id/lying_leg_curls2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/lying_leg_curls"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/barbell_good_morning"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_good_morning"
+                android:contentDescription="barbell good morning" />
+
+            <ImageButton
+                android:id="@+id/barbell_good_morning2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:background="@drawable/barbell_good_morning"
+                android:backgroundTint="@color/green_1"
+                android:backgroundTintMode="multiply"
+                android:visibility="gone" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/horizontalScrollLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"/>
+    </HorizontalScrollView>
+
+
+    <Button
+        android:id="@+id/done2"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/green_1"
+        android:text="Done"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

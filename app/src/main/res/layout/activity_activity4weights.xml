@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_3"
+    tools:context="com.example.semestralna_praca.Activity4weights">
+
+  <ScrollView
+      android:id="@+id/scrollView2"
+      android:layout_width="350dp"
+      android:layout_height="550dp"
+      android:contentDescription="scroll view"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.2">
+
+    <LinearLayout
+        android:id="@+id/sclayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <LinearLayout
+          android:id="@+id/layout2"
+          android:layout_width="140dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/layout3"
+          android:layout_width="210dp"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <HorizontalScrollView
+      android:id="@+id/horizontalScroll2"
+      android:layout_width="500dp"
+      android:layout_height="250dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="180dp"
+      android:layout_marginBottom="80dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.431"
+      app:layout_constraintStart_toStartOf="parent"
+      android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/horizontalScrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+      <LinearLayout
+          android:id="@+id/scrollLayout2"
+          android:layout_width="match_parent"
+          android:layout_height="130dp"
+          android:orientation="horizontal"
+          android:visibility="gone">
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/scrollLayout3"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:orientation="horizontal"
+          android:visibility="gone">
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/scrollLayout3_1"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:orientation="horizontal"
+          android:visibility="gone">
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </HorizontalScrollView>
+
+  <RadioGroup
+      android:id="@+id/myRadioGroup"
+      android:layout_width="106dp"
+      android:layout_height="168dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="150dp"
+      android:layout_marginBottom="50dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+    <RadioButton
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Easy" />
+
+    <RadioButton
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium" />
+
+    <RadioButton
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hard" />
+
+  </RadioGroup>
+
+  <Button
+      android:id="@+id/done3"
+      android:layout_width="180dp"
+      android:layout_height="50dp"
+      android:layout_marginEnd="40dp"
+      android:layout_marginBottom="16dp"
+      android:backgroundTint="@color/green_1"
+      android:text="Done"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
